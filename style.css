@@ -1068,3 +1068,137 @@ header>a {
 }
 
 /* ///// end Experience section ///// */
+
+/* < !-- ///// start reviews section //// --> */
+#contact,   
+#reviews {
+    background-image: linear-gradient(to bottom right, var(--clr-dark-800) 50%, var(--clr-dark-900));
+}
+
+.reviews-blur-div {
+    left: 33.333%;
+    width: 24rem;
+    height: 24rem;
+    background-color: var(--clr-accent-600);
+    opacity: .1;
+    filter: blur(64px);
+    -webkit-filter: blur(64px);
+}
+
+.ask-outer {
+    background-image: linear-gradient(to right, var(--clr-accent-500) 0%, var(--clr-accent-400) 50%, var(--clr-accent-600) 100%);
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.inner-ask {
+    background-color: var(--clr-dark-800);
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.inner-ask h3 {
+    font-size: 1.875rem;
+}
+
+.inner-ask p {
+    font-size: 1.25rem;
+    max-width: 42rem;
+    margin-bottom: 2rem;
+}
+
+.inner-ask .projects-btn,
+.inner-ask .contact-btn {
+    font-size: 14px;
+}
+
+.inner-ask .projects-btn:hover {
+    box-shadow: 0 10px 15px -3px color-mix(in oklab,
+            color-mix(in oklab, var(--clr-accent-500) 50%, transparent) 100%, transparent), 0 4px 6px -4px color-mix(in oklab,
+            color-mix(in oklab, var(--clr-accent-500) 50%, transparent) 100%, transparent);
+}
+
+/* < !-- ///// end reviews section //// --> */
+
+
+/* < !-- //// recap section start //// --> */
+#recap {
+    background-image: linear-gradient(to right, var(--clr-dark-800) 20%, var(--clr-dark-900));
+}
+
+.awards,
+.years,
+.clients-number,
+.projects-number {
+    font-size: 3rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.years {
+    background-image: linear-gradient(to right, var(--clr-accent-600), var(--clr-accent-500));
+}
+
+.projects-number {
+    background-image: linear-gradient(to right, var(--clr-accent-500), var(--clr-accent-400));
+}
+
+.clients-number {
+    background-image: linear-gradient(to right, var(--clr-accent-400), var(--clr-accent-600));
+}
+
+.awards {
+    background-image: linear-gradient(to right, var(--clr-accent-500), var(--clr-accent-600));
+}
+
+.awards-svg,
+.years-svg,
+.client-number-svg,
+.project-number-svg {
+    width: 6rem;
+    height: 6rem;
+}
+
+.project-number-svg {
+    background-image: linear-gradient(to bottom right, var(--clr-accent-500), var(--clr-accent-400));
+}
+
+.client-number-svg {
+    background-image: linear-gradient(to bottom right, var(--clr-accent-400), var(--clr-accent-600));
+}
+
+.years-svg {
+    background-image: linear-gradient(to bottom right, var(--clr-accent-600), var(--clr-accent-500));
+}
+
+.awards-svg {
+    background-image: linear-gradient(to bottom right, var(--clr-accent-500), var(--clr-accent-600));
+}
+/* < !-- //// recap section end //// --> */
+
+/* ///// start contact ////// */
+.p-title{
+    max-width: 42rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// end contact ////// */
