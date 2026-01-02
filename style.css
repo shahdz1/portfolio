@@ -77,6 +77,10 @@
     padding-inline: 2rem;
 }
 
+.py-32 {
+    padding-block: 2rem;
+}
+
 .text-success {
     --bs-success-rgb: var(--clr-green-400-rgb);
 }
@@ -947,6 +951,7 @@ header>a {
     backdrop-filter: blur(8px);
 }
 
+.contact-box:hover,
 .floating-card:hover {
     border-color: var(--clr-accent-500);
 }
@@ -1070,7 +1075,7 @@ header>a {
 /* ///// end Experience section ///// */
 
 /* < !-- ///// start reviews section //// --> */
-#contact,   
+#contact,
 #reviews {
     background-image: linear-gradient(to bottom right, var(--clr-dark-800) 50%, var(--clr-dark-900));
 }
@@ -1181,24 +1186,75 @@ header>a {
 .awards-svg {
     background-image: linear-gradient(to bottom right, var(--clr-accent-500), var(--clr-accent-600));
 }
+
 /* < !-- //// recap section end //// --> */
 
 /* ///// start contact ////// */
-.p-title{
+.p-title {
     max-width: 42rem;
 }
+#contact .contact-box .experience-svg-1,
+#contact .contact-box .experience-svg-2,
+#contact .contact-box .experience-svg-3,
+.contact-box,
+#contact .social-badge {
+    transition: all .3S cubic-bezier(.4, 0, .2, 1);
+    -webkit-transition: all .3S cubic-bezier(.4, 0, .2, 1);
+    -moz-transition: all .3S cubic-bezier(.4, 0, .2, 1);
+    -ms-transition: all .3S cubic-bezier(.4, 0, .2, 1);
+    -o-transition: all .3S cubic-bezier(.4, 0, .2, 1);
+}
+.contact-box:hover{
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+#contact .contact-box:hover .experience-svg-1,
+#contact .contact-box:hover .experience-svg-2,
+#contact .contact-box:hover .experience-svg-3,
+#contact .social-badge:hover {
+    scale: 1.1;
+}
 
+#contact .social-badge:hover {
+    --bs-dark-rgb: var(--clr-accent-500-rgb);
+}
 
+.form-div,
+.contact-box {
+    background-color: color-mix(in oklab, var(--clr-dark-700) 50%, transparent);
+    backdrop-filter: blur(8px);
+}
 
+.form-select,
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 1rem .75rem;
+    background-color: color-mix(in oklab, var(--clr-dark-600) 50%, transparent);
+    border: 1px solid var(--clr-text-400);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
 
+.form-control:focus {
+    background-color: color-mix(in oklab, var(--clr-dark-600) 50%, transparent);
+    outline: 2px solid var(--clr-accent-500);
+    box-shadow: none;
+    outline-offset: 2px;
+}
 
-
-
-
-
-
-
-
+.form-control::placeholder {
+    color: var(--clr-text-300);
+    font-size: 16px;
+    font-family: var(--font-main);
+    font-weight: 500;
+}
 
 
 /* ///// end contact ////// */
