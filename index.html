@@ -576,14 +576,15 @@
                     <div class="rounded-pill mx-auto title-line"></div>
                 </div>
                 <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
-                    <button class="fw-bold px-32 rounded-12 taps-btn active">الكل</button>
-                    <button class="fw-bold px-32 rounded-12 taps-btn">مواقع الويب</button>
-                    <button class="fw-bold px-32 rounded-12 taps-btn">التطبيقات</button>
-                    <button class="fw-bold px-32 rounded-12 taps-btn">التصميم</button>
-                    <button class="fw-bold px-32 rounded-12 taps-btn">التجارة الالكترونية</button>
+                    <button class="fw-bold px-32 rounded-12 taps-btn active" data-filter="all">الكل</button>
+                    <button class="fw-bold px-32 rounded-12 taps-btn" data-filter="website">مواقع الويب</button>
+                    <button class="fw-bold px-32 rounded-12 taps-btn" data-filter="app">التطبيقات</button>
+                    <button class="fw-bold px-32 rounded-12 taps-btn" data-filter="design">التصميم</button>
+                    <button class="fw-bold px-32 rounded-12 taps-btn" data-filter="commerce">التجارة
+                        الالكترونية</button>
                 </div>
-                <div class="row g-4">
-                    <div class="col-12 col-md-6 col-xl-4 d-flex ">
+                <div class="row g-4 fade-in">
+                    <div class="col-12 col-md-6 col-xl-4 d-flex all website">
                         <div
                             class="bg-dark basic-border rounded-4 overflow-hidden position-relative project-card d-flex flex-column h-100 w-100">
                             <div class="overflow-hidden position-relative img-project-card">
@@ -625,7 +626,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 d-flex ">
+                    <div class="col-12 col-md-6 col-xl-4 d-flex all app">
                         <div
                             class="bg-dark basic-border rounded-4 overflow-hidden position-relative project-card d-flex flex-column h-100 w-100">
                             <div class="overflow-hidden position-relative img-project-card">
@@ -667,7 +668,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 d-flex ">
+                    <div class="col-12 col-md-6 col-xl-4 d-flex all design">
                         <div
                             class="bg-dark basic-border rounded-4 overflow-hidden position-relative project-card d-flex flex-column h-100 w-100">
                             <div class="overflow-hidden position-relative img-project-card">
@@ -707,7 +708,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 d-flex ">
+                    <div class="col-12 col-md-6 col-xl-4 d-flex all website">
                         <div
                             class="bg-dark basic-border rounded-4 overflow-hidden position-relative project-card d-flex flex-column h-100 w-100">
                             <div class="overflow-hidden position-relative img-project-card">
@@ -748,7 +749,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 d-flex ">
+                    <div class="col-12 col-md-6 col-xl-4 d-flex all app">
                         <div
                             class="bg-dark basic-border rounded-4 overflow-hidden position-relative project-card d-flex flex-column h-100 w-100">
                             <div class="overflow-hidden position-relative img-project-card">
@@ -788,7 +789,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 d-flex ">
+                    <div class="col-12 col-md-6 col-xl-4 d-flex all commerce">
                         <div
                             class="bg-dark basic-border rounded-4 overflow-hidden position-relative project-card d-flex flex-column h-100 w-100">
                             <div class="overflow-hidden position-relative img-project-card">
@@ -828,7 +829,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 d-flex ">
+                    <div class="col-12 col-md-6 col-xl-4 d-flex all website">
                         <div
                             class="bg-dark basic-border rounded-4 overflow-hidden position-relative project-card d-flex flex-column h-100 w-100">
                             <div class="overflow-hidden position-relative img-project-card">
@@ -869,7 +870,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 d-flex ">
+                    <div class="col-12 col-md-6 col-xl-4 d-flex all app">
                         <div
                             class="bg-dark basic-border rounded-4 overflow-hidden position-relative project-card d-flex flex-column h-100 w-100">
                             <div class="overflow-hidden position-relative img-project-card">
@@ -909,7 +910,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 d-flex ">
+                    <div class="col-12 col-md-6 col-xl-4 d-flex all design">
                         <div
                             class="bg-dark basic-border rounded-4 overflow-hidden position-relative project-card d-flex flex-column h-100 w-100">
                             <div class="overflow-hidden position-relative img-project-card">
@@ -1162,6 +1163,307 @@
                     </h2>
                     <div class="rounded-pill mx-auto title-line"></div>
                 </div>
+                <div class="mb-5 position-relative px-32">
+                    <div class="overflow-hidden">
+                        <div id="testimonials-carousel" class="d-flex align-items-stretch">
+                            <div class="testimonial-card px-3 d-flex flex-column align-self-stretch flex-shrink-0">
+                                <div class=" basic-border rounded-4 h-100 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="./images/avatar-1.jpg" alt="ahmed elsaed"
+                                            class="object-fit-cover rounded-circle ms-3" />
+                                        <div>
+                                            <h4 class="fw-bold  fs-5 text-white">أحمد السعيد</h4>
+                                            <p class="text-light-gray">
+                                                مدير شركة التقنية الحديثة
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                    </div>
+                                    <p class="fs-18 text-lighter-gray flex-grow-1">
+                                        "شغل أحمد معانا كان حاجة تانية خالص. قدم حلول مبتكرة لكل
+                                        المشاكل اللي واجهتنا. الموقع اللي عمله عدى كل توقعاتنا في
+                                        التصميم والأداء."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card px-3 d-flex flex-column align-self-stretch flex-shrink-0">
+                                <div class=" basic-border rounded-4 h-100 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="./images/avatar-2.jpg" alt="sief osama"
+                                            class="object-fit-cover rounded-circle ms-3" />
+                                        <div>
+                                            <h4 class="fw-bold  fs-5 text-white">سيف أسامة</h4>
+                                            <p class="text-light-gray">
+                                                ميديا باير
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                    </div>
+                                    <p class="fs-18 text-lighter-gray flex-grow-1">
+                                        "المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر.
+                                        شكراً يا أحمد على المجهود الجبار!"
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card px-3 d-flex flex-column align-self-stretch flex-shrink-0">
+                                <div class=" basic-border rounded-4 h-100 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="./images/avatar-3.jpg" alt="khaled salah"
+                                            class="object-fit-cover rounded-circle ms-3" />
+                                        <div>
+                                            <h4 class="fw-bold  fs-5 text-white">خالد صلاح</h4>
+                                            <p class="text-light-gray">
+                                                مدير تطوير الأعمال
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                    </div>
+                                    <p class="fs-18 text-lighter-gray flex-grow-1">"شغل محترفين بجد ومواعيد مظبوطة.
+                                        التطبيق اللي عمله لنا شغال زي الفل على كل الأجهزة. بننصح بيه جداً لأي مشروع."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card px-3 d-flex flex-column align-self-stretch flex-shrink-0">
+                                <div class=" basic-border rounded-4 h-100 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="./images/avatar-4.avif" alt="ahmed elrefaay"
+                                            class="object-fit-cover rounded-circle ms-3" />
+                                        <div>
+                                            <h4 class="fw-bold  fs-5 text-white">أحمد الرفاعي</h4>
+                                            <p class="text-light-gray">
+                                                جرافيك ديزاينر
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                    </div>
+                                    <p class="fs-18 text-lighter-gray flex-grow-1">"تجربة ممتازة من الأول للآخر. أحمد
+                                        سمع طلباتنا كويس وقدم أفكار برة الصندوق. الموقع الجديد عجب العملاء جداً."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card px-3 d-flex flex-column align-self-stretch flex-shrink-0">
+                                <div class=" basic-border rounded-4 h-100 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="./images/avatar-5.jpg" alt="amr adel"
+                                            class="object-fit-cover rounded-circle ms-3" />
+                                        <div>
+                                            <h4 class="fw-bold  fs-5 text-white">عمر عادل</h4>
+                                            <p class="text-light-gray">
+                                                مؤسس شركة ناشئة
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                    </div>
+                                    <p class="fs-18 text-lighter-gray flex-grow-1">
+                                        ""أحمد ساعدنا نحول الفكرة لواقع. الـ MVP اللي عمله كان ممتاز عشان نجذب مستثمرين.
+                                        شطارة تقنية وإبداع ملوش حل."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card px-3 d-flex flex-column align-self-stretch flex-shrink-0">
+                                <div class=" basic-border rounded-4 h-100 d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="./images/avatar-6.avif" alt="kareem yaser"
+                                            class="object-fit-cover rounded-circle ms-3" />
+                                        <div>
+                                            <h4 class="fw-bold  fs-5 text-white">كريم ياسر</h4>
+                                            <p class="text-light-gray">
+                                                دكتور صيدلي
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
+                                            height="20px">
+                                            <path fill="#fdc700"
+                                                d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                                        </svg>
+                                    </div>
+                                    <p class="fs-18 text-lighter-gray flex-grow-1">
+                                        ""الشغل مع أحمد كان مريح ومنظم جداً. دايماً بيبعت تحديثات وبيرد بسرعة على أي
+                                        تعديل. النتيجة النهائية أحسن من اللي كنا متخيلينه."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <button id="next-testimonial"
+                        class="text-white position-absolute top-50 start-0 d-none d-md-flex justify-content-center align-items-center rounded-circle basic-border"
+                        type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16px" height="16px">
+                            <path fill="white"
+                                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                        </svg>
+                    </button>
+                    <button id="prev-testimonial"
+                        class="text-white position-absolute top-50 end-0 d-none d-md-flex justify-content-center align-items-center rounded-circle basic-border"
+                        type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16px" height="16px">
+                            <path fill="white"
+                                d="M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="d-flex justify-content-center gap-12 mb-5">
+                    <button class="indicators rounded-circle border-0 active-indicarots" type="button"></button>
+                    <button class="indicators rounded-circle border-0" type="button"></button>
+                    <button class="indicators rounded-circle border-0" type="button"></button>
+                    <button class="indicators rounded-circle border-0" type="button"></button>
+                </div>
                 <div class="p-1 ask-outer">
                     <div class="inner-ask p-5 text-center">
                         <h3 class="fw-bold mb-3 text-white">جاهز تبدأ مشروعك؟</h3>
@@ -1405,7 +1707,8 @@
                                     <textarea class="form-control" id="project" rows="5"
                                         placeholder="احكيلي تفاصيل مشروعك..."></textarea>
                                 </div>
-                                <button href="#contact" class="text-white fw-bold py-3 px-32 d-inline-flex justify-content-center align-items-center rounded-12 projects-btn w-100 border-0"><span>
+                                <button href="#contact"
+                                    class="text-white fw-bold py-3 px-32 d-inline-flex justify-content-center align-items-center rounded-12 projects-btn w-100 border-0"><span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px"
                                             height="20px" class=" ms-2">
                                             <path fill="white"
@@ -1420,15 +1723,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
         <!-- ///// end contact ////// -->
 
 
